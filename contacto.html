@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | FreestyleNews</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Freestyle<span>News</span></a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="contacto.html" class="active">Contactanos</a>
+    </nav>
+    <a class="whatsapp-btn" href="https://wa.me/56912345678?text=Estoy%20interesado%20en%20los%20pr%C3%B3ximos%20eventos%20de%20freestyle." target="_blank" rel="noopener noreferrer">
+      <span class="whatsapp-mark">WA</span>
+      Contactame
+    </a>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <p class="section-label">Contacto</p>
+      <h1>Hablemos de freestyle</h1>
+      <p>Completa este formulario demo para recibir información sobre eventos, competencias y novedades de la escena.</p>
+    </section>
+
+    <section class="contact-layout">
+      <form class="contact-form">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Tu nombre" />
+
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" placeholder="tu@email.com" />
+
+        <label for="interes">¿Qué información buscas?</label>
+        <select id="interes">
+          <option>Próximos eventos</option>
+          <option>Noticias de freestyle</option>
+          <option>Rankings y competidores</option>
+          <option>Organizar una batalla</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" rows="5" placeholder="Cuéntanos qué estás buscando..."></textarea>
+
+        <button type="submit" class="primary-btn">Enviar mensaje</button>
+      </form>
+
+      <aside class="contact-info">
+        <h2>Información rápida</h2>
+        <p>Esta página es una demo enfocada en la cultura freestyle internacional.</p>
+
+        <div class="info-box">
+          <strong>WhatsApp</strong>
+          <p>Consulta directa sobre próximos eventos.</p>
+        </div>
+
+        <div class="info-box">
+          <strong>Contenido</strong>
+          <p>Noticias, rankings y calendario demo.</p>
+        </div>
+
+        <div class="info-box">
+          <strong>Escena</strong>
+          <p>Red Bull Batalla, FMS y Supremacia MC.</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 FreestyleNews.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
