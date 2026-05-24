@@ -3,199 +3,215 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FreestyleNews | Cultura freestyle</title>
+  <title>FreestyleNews | Noticias, eventos y estadísticas</title>
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-  <header class="header">
-    <a href="index.html" class="logo">Freestyle<span>News</span></a>
-    <nav class="nav" aria-label="Navegacion principal">
-      <a href="index.html" class="active">Inicio</a>
+  <header class="site-header">
+    <a href="index.html" class="brand">Freestyle<span>News</span></a>
+
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#local" class="active">Escena local</a>
       <a href="#noticias">Noticias</a>
-      <a href="#fms">FMS</a>
-      <a href="#estadisticas">Stats</a>
       <a href="#resultados">Resultados</a>
-      <a href="contacto.html">Contactanos</a>
+      <a href="#estadisticas">Stats</a>
+      <a href="#agenda">Agenda</a>
+      <a href="contacto.html">Publicar</a>
     </nav>
-    <a class="whatsapp-btn" href="https://wa.me/56966032734?text=quiero%20mas%20info%20de%20freestyle" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
-      <span class="whatsapp-mark">WA</span>
-      Contactame
-    </a>
+
+    <a class="whatsapp-btn" href="https://wa.me/56966032734?text=quiero%20mas%20info%20de%20freestyle" target="_blank" rel="noopener noreferrer">WA Contactame</a>
   </header>
 
   <main>
-    <section class="hero hero-canserbero">
-      <div class="hero-art" aria-label="Ilustracion homenaje a Canserbero">
-        <div class="canserbero-poster">
-          <div class="poster-sun"></div>
-          <div class="poster-name">CANSERBERO</div>
-          <div class="poster-portrait">
-            <div class="cap"></div>
-            <div class="hair hair-left"></div>
-            <div class="hair hair-right"></div>
-            <div class="face">
-              <span class="brow brow-left"></span>
-              <span class="brow brow-right"></span>
-              <span class="eye eye-left"></span>
-              <span class="eye eye-right"></span>
-              <span class="nose"></span>
-              <span class="moustache"></span>
-              <span class="mouth"></span>
-              <span class="beard"></span>
-            </div>
-            <div class="neck"></div>
-            <div class="hoodie"></div>
+    <section class="top-hero">
+      <div class="hero-copy">
+        <p class="kicker">Freestyle mundial</p>
+        <h1>Noticias, batallas y data en un solo lugar.</h1>
+        <p>Un hub para seguir la escena: calle, ligas, resultados, estadísticas, agenda y enlaces clave sin perderse entre mil páginas.</p>
+      </div>
+      <div class="hero-panel">
+        <span>Hoy en el radar</span>
+        <strong>Escena local + circuito internacional</strong>
+        <p>La portada prioriza lo cercano: batallas de calle, convocatorias y movimientos regionales. Luego conecta con FMS, Red Bull, Urban Roosters y FreestyleStats.</p>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Actualizaciones rápidas">
+      <div class="ticker-track">
+        <span>Última hora</span>
+        <span>Freestyle Chile</span>
+        <span>FMS World Series</span>
+        <span>Resultados recientes</span>
+        <span>Batallas de calle</span>
+        <span>Red Bull Batalla</span>
+        <span>Rankings y estadísticas</span>
+      </div>
+    </section>
+
+    <section class="section local-section" id="local">
+      <div class="section-head">
+        <p class="kicker">Gancho principal</p>
+        <h2>Escena local</h2>
+        <p>Un espacio para publicar convocatorias, plazas, batallas independientes y movimientos regionales. Aquí la página puede diferenciarse de los medios grandes.</p>
+      </div>
+
+      <div class="local-layout">
+        <article class="local-feature">
+          <div>
+            <span class="pill">Santiago</span>
+            <h3>Freestyle de calle: plazas, parques y cyphers</h3>
+            <p>Sección pensada para mapear puntos de encuentro, horarios, comunidades y eventos emergentes. Ideal para Parque Bustamante, plazas regionales y competencias independientes.</p>
           </div>
-          <div class="poster-quote">rap consciente · memoria · calle</div>
+          <a href="contacto.html" class="secondary-btn">Publicar evento</a>
+        </article>
+
+        <div class="local-list">
+          <article>
+            <span>Convocatoria</span>
+            <h4>Envía fecha, lugar y flyer de tu batalla</h4>
+            <p>La comunidad puede aportar eventos locales vía WhatsApp.</p>
+          </article>
+          <article>
+            <span>Mapa freestyle</span>
+            <h4>Próximo módulo: calendario regional</h4>
+            <p>Chile primero, luego Perú, Argentina, México y España.</p>
+          </article>
+          <article>
+            <span>Calle</span>
+            <h4>Batallas pequeñas también importan</h4>
+            <p>No todo pasa en grandes escenarios: esta sección le da vitrina a la base.</p>
+          </article>
         </div>
       </div>
-      <div class="hero-content">
-        <p class="eyebrow">Venezuela · Rap consciente · Freestyle mundial</p>
-        <h1>Donde la barra pesa más que el ruido</h1>
-        <p>FreestyleNews nace desde una mirada venezolana: homenaje al legado lírico de Canserbero, conectado con la escena competitiva global, sus noticias, estadísticas y resultados.</p>
-        <div class="hero-actions">
-          <a href="#noticias" class="primary-btn">Ver noticias</a>
-          <a href="#estadisticas" class="secondary-btn">Ver estadísticas</a>
+    </section>
+
+    <section class="section news-section" id="noticias">
+      <div class="section-head split-head">
+        <div>
+          <p class="kicker">Noticias</p>
+          <h2>Portada informativa</h2>
         </div>
+        <p>Noticias destacadas, enlaces externos y resúmenes editoriales. La idea no es copiar contenido: es ordenar rutas confiables para que el usuario llegue rápido.</p>
       </div>
-    </section>
 
-    <section class="featured-blocks" aria-label="Competencias destacadas">
-      <article class="feature-card redbull">
-        <div class="feature-overlay">
-          <p class="tag">Competencia internacional</p>
-          <h2>Red Bull Batalla</h2>
-          <p>Finales nacionales e internacionales, escena masiva, cultura de plaza y grandes nombres del freestyle hispano.</p>
-        </div>
-      </article>
-
-      <article class="feature-card fms">
-        <div class="feature-overlay">
-          <p class="tag">Liga profesional</p>
-          <h2>FMS / World Series</h2>
-          <p>Jornadas, rankings, formatos competitivos y cruces entre MCs de distintos países.</p>
-        </div>
-      </article>
-
-      <article class="feature-card supremacia">
-        <div class="feature-overlay">
-          <p class="tag">Rap latinoamericano</p>
-          <h2>Legado y barras</h2>
-          <p>Una lectura cultural del freestyle: métrica, narrativa, punchline, identidad y calle.</p>
-        </div>
-      </article>
-    </section>
-
-    <section class="about-section">
-      <div class="section-label">Sobre el proyecto</div>
-      <h2>Freestyle con memoria y datos</h2>
-      <p>Esta demo combina dos mundos: la sensibilidad del rap consciente venezolano y la cobertura moderna del freestyle competitivo. No busca reemplazar a los medios oficiales, sino ordenar enlaces, noticias, resultados y estadísticas en una experiencia visual más clara.</p>
-      <p>Canserbero aparece como inspiración estética y cultural: no como marca comercial, sino como símbolo de escritura cruda, pensamiento crítico y respeto por la palabra.</p>
-    </section>
-
-    <section class="news-section" id="noticias">
-      <div class="section-label">Noticias</div>
-      <h2>Radar de la escena</h2>
-      <div class="news-grid">
-        <article class="news-card main-news">
-          <span>Fuente sugerida · Urban Roosters</span>
-          <h3>Noticias, jornadas y anuncios del circuito competitivo</h3>
-          <p>Una sección pensada para enlazar notas, novedades y cobertura del freestyle profesional desde Urban Roosters.</p>
-          <a href="https://urbanroosters.com" target="_blank" rel="noopener noreferrer">Ir a Urban Roosters</a>
+      <div class="magazine-grid">
+        <article class="main-story story-card">
+          <div class="story-image image-crowd"></div>
+          <div class="story-content">
+            <span>Urban Roosters</span>
+            <h3>Noticias oficiales del circuito competitivo</h3>
+            <p>Acceso a novedades, jornadas, competidores y anuncios del ecosistema FMS/Urban Roosters.</p>
+            <a href="https://urbanroosters.com" target="_blank" rel="noopener noreferrer">Ir a la fuente</a>
+          </div>
         </article>
-        <article class="news-card">
-          <span>Cultura</span>
-          <h3>El peso de la palabra en el rap venezolano</h3>
-          <p>Espacio editorial para conectar influencia, identidad, lírica y memoria dentro de la cultura freestyle.</p>
+
+        <article class="story-card side-story">
+          <div class="story-content">
+            <span>Red Bull Batalla</span>
+            <h3>Finales, clasificatorias y cobertura internacional</h3>
+            <p>Referencia para eventos masivos, finales nacionales y contenido editorial de alto alcance.</p>
+            <a href="https://www.redbull.com/cl-es/event-series/red-bull-batalla" target="_blank" rel="noopener noreferrer">Ver Red Bull Batalla</a>
+          </div>
+          <div class="story-image image-stage"></div>
         </article>
-        <article class="news-card">
-          <span>Agenda</span>
-          <h3>Eventos que mueven la escena internacional</h3>
-          <p>Fechas relevantes, finales nacionales, ligas y competiciones globales en un solo tablero.</p>
+
+        <article class="story-card side-story reverse">
+          <div class="story-image image-mic"></div>
+          <div class="story-content">
+            <span>FreestyleNews</span>
+            <h3>Resumen editorial semanal</h3>
+            <p>Espacio propio para publicar síntesis: qué pasó, qué viene y por qué importa.</p>
+          </div>
         </article>
       </div>
     </section>
 
-    <section class="link-section" id="fms">
-      <div>
-        <p class="section-label">FMS Mundial</p>
-        <h2>Información global de FMS</h2>
-        <p>Acceso directo a FMS TV para revisar calendario, competidores, jornadas, eventos y contenido oficial del circuito.</p>
+    <section class="wide-banner">
+      <div class="banner-track">
+        <span>Noticias verificadas</span>
+        <span>Agenda mundial</span>
+        <span>Escena local</span>
+        <span>Resultados</span>
+        <span>Estadísticas</span>
+        <span>Publica tu evento</span>
       </div>
-      <a href="https://fms.tv/" target="_blank" rel="noopener noreferrer" class="primary-btn">Entrar a FMS TV</a>
     </section>
 
-    <section class="stats-section" id="estadisticas">
-      <div class="section-label">Estadísticas</div>
-      <h2>Tabla y rendimiento</h2>
-      <div class="stats-board">
+    <section class="section dashboard-section">
+      <div class="dashboard-card" id="resultados">
+        <div class="card-head">
+          <p class="kicker">Resultados</p>
+          <a href="https://fms.tv/resultados/" target="_blank" rel="noopener noreferrer">Ver FMS TV</a>
+        </div>
+        <h2>Últimas batallas</h2>
+        <div class="result-list">
+          <div><strong>MC A</strong><span>3 - 0</span><strong>MC B</strong></div>
+          <div><strong>MC C</strong><span>2 - 1</span><strong>MC D</strong></div>
+          <div><strong>MC E</strong><span>Réplica</span><strong>MC F</strong></div>
+        </div>
+      </div>
+
+      <div class="dashboard-card" id="estadisticas">
+        <div class="card-head">
+          <p class="kicker">Estadísticas</p>
+          <a href="https://freestylestats.com/competition/fms-world-series/2025-2026/standings" target="_blank" rel="noopener noreferrer">Ver Stats</a>
+        </div>
+        <h2>Standings</h2>
+        <div class="rank-list">
+          <div><span>#1</span><strong>Competidor líder</strong><small>Pts · Dif · Jornada</small></div>
+          <div><span>#2</span><strong>Perseguidor directo</strong><small>Pts · Dif · Jornada</small></div>
+          <div><span>#3</span><strong>Zona alta</strong><small>Pts · Dif · Jornada</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section agenda-section" id="agenda">
+      <div class="section-head split-head">
+        <div>
+          <p class="kicker">Calendario</p>
+          <h2>Agenda mundial</h2>
+        </div>
+        <a href="https://fms.tv/" target="_blank" rel="noopener noreferrer" class="secondary-btn">FMS mundial</a>
+      </div>
+
+      <div class="agenda-grid">
         <article>
-          <span class="stat-number">01</span>
-          <h3>Standings</h3>
-          <p>Consulta posiciones, puntos y rendimiento competitivo en FreestyleStats.</p>
+          <span>Sep 2026</span>
+          <h3>Final nacional</h3>
+          <p>Evento demo · Latinoamérica</p>
         </article>
         <article>
-          <span class="stat-number">02</span>
-          <h3>Lectura deportiva</h3>
-          <p>Una capa para entender no solo quién gana, sino cómo compite cada MC.</p>
+          <span>Oct 2026</span>
+          <h3>Jornada FMS</h3>
+          <p>Evento demo · Circuito internacional</p>
         </article>
         <article>
-          <span class="stat-number">03</span>
-          <h3>Comparación</h3>
-          <p>Base ideal para futuras visualizaciones: victorias, derrotas, réplica, rendimiento y evolución.</p>
+          <span>Dic 2026</span>
+          <h3>World Series</h3>
+          <p>Evento demo · Formato mundial</p>
+        </article>
+        <article class="submit-event">
+          <span>Tu ciudad</span>
+          <h3>Publica una batalla</h3>
+          <p>Envía información para sumar eventos locales.</p>
         </article>
       </div>
-      <a href="https://freestylestats.com/competition/fms-world-series/2025-2026/standings" target="_blank" rel="noopener noreferrer" class="secondary-btn">Ver FreestyleStats</a>
     </section>
 
-    <section class="results-section" id="resultados">
+    <section class="submit-section">
       <div>
-        <p class="section-label">Resultados</p>
-        <h2>Últimas batallas y jornadas</h2>
-        <p>Acceso directo a la sección de resultados de FMS TV, pensada para revisar marcadores, cruces y desempeño por jornada.</p>
+        <p class="kicker">Comunidad</p>
+        <h2>¿Tienes una noticia, flyer o evento?</h2>
+        <p>FreestyleNews puede funcionar como vitrina para batallas locales, resultados, convocatorias y novedades de la escena.</p>
       </div>
-      <a href="https://fms.tv/resultados/" target="_blank" rel="noopener noreferrer" class="primary-btn">Ver resultados</a>
-    </section>
-
-    <section class="calendar-section">
-      <div class="section-label">Agenda demo</div>
-      <h2>Próximos eventos de freestyle</h2>
-      <div class="calendar-grid">
-        <article class="event-card">
-          <span class="event-date">12 SEP 2026</span>
-          <h3>Red Bull Batalla Final Nacional Perú</h3>
-          <p>Perú</p>
-        </article>
-        <article class="event-card">
-          <span class="event-date">02 OCT 2026</span>
-          <h3>Red Bull Batalla Final Nacional Argentina</h3>
-          <p>Argentina</p>
-        </article>
-        <article class="event-card">
-          <span class="event-date">05 DIC 2026</span>
-          <h3>Red Bull Batalla Final Nacional México</h3>
-          <p>México</p>
-        </article>
-        <article class="event-card">
-          <span class="event-date">12 DIC 2026</span>
-          <h3>FMS World Cup Final</h3>
-          <p>Ciudad de México</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="contact-preview">
-      <div>
-        <p class="section-label">Contacto</p>
-        <h2>¿Quieres recibir novedades?</h2>
-        <p>Déjanos tus datos o escríbenos directamente por WhatsApp para recibir información sobre próximos eventos, rankings y noticias del freestyle.</p>
-      </div>
-      <a href="https://wa.me/56966032734?text=quiero%20mas%20info%20de%20freestyle" target="_blank" rel="noopener noreferrer" class="primary-btn">Contactar por WhatsApp</a>
+      <a href="https://wa.me/56966032734?text=quiero%20mas%20info%20de%20freestyle" target="_blank" rel="noopener noreferrer" class="primary-btn">Enviar por WhatsApp</a>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 FreestyleNews. Demo web sobre cultura freestyle.</p>
+    <p>© 2026 FreestyleNews · Portal demo de noticias freestyle.</p>
   </footer>
 
   <script src="script.js"></script>
