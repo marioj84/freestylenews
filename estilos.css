@@ -1,0 +1,349 @@
+:root {
+  --bg-main: #f3efe7;
+  --bg-soft: #ebe3d5;
+  --text-main: #171717;
+  --text-muted: #5f5a52;
+  --accent: #a31621;
+  --accent-2: #1f3a5f;
+  --border-soft: rgba(23,23,23,0.14);
+  --shadow: 0 20px 45px rgba(35,31,26,0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.65;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  width: 100%;
+  min-height: 78px;
+  padding: 18px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: rgba(243,239,231,0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-soft);
+  z-index: 50;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--text-main);
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.nav a.active,
+.nav a:hover {
+  color: var(--text-main);
+}
+
+.whatsapp-btn {
+  text-decoration: none;
+  background: var(--text-main);
+  color: var(--bg-main);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-family: Arial, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.whatsapp-btn:hover {
+  background: var(--accent);
+}
+
+.hero {
+  min-height: 68vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 90px 6%;
+  background:
+    linear-gradient(rgba(243,239,231,0.25), rgba(243,239,231,0.94)),
+    url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+
+.hero-content {
+  max-width: 920px;
+}
+
+.eyebrow,
+.section-label,
+.tag {
+  color: var(--accent);
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 14px;
+}
+
+.hero h1,
+.about-section h2,
+.calendar-section h2,
+.contact-preview h2,
+.contact-hero h1 {
+  font-size: clamp(2.5rem, 7vw, 6rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+  margin-bottom: 24px;
+}
+
+.hero p,
+.about-section p,
+.contact-preview p,
+.contact-hero p,
+.contact-info p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.featured-blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 76px 6%;
+}
+
+.feature-card {
+  min-height: 440px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  transition: 0.35s ease;
+  box-shadow: var(--shadow);
+}
+
+.feature-card:hover {
+  filter: grayscale(0%);
+  transform: translateY(-6px);
+}
+
+.redbull {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.82), transparent),
+    url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80');
+}
+
+.fms {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.82), transparent),
+    url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=900&q=80');
+}
+
+.supremacia {
+  background-image:
+    linear-gradient(to top, rgba(0,0,0,0.82), transparent),
+    url('https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=900&q=80');
+}
+
+.feature-overlay {
+  color: white;
+  padding: 34px;
+}
+
+.feature-overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.feature-overlay p {
+  color: rgba(255,255,255,0.8);
+}
+
+.about-section,
+.calendar-section,
+.contact-preview,
+.contact-hero,
+.contact-layout {
+  width: min(1120px, 88%);
+  margin: 0 auto;
+}
+
+.about-section {
+  padding: 74px 0;
+}
+
+.calendar-section {
+  padding: 70px 0 86px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.event-card {
+  background: rgba(255,255,255,0.45);
+  border: 1px solid var(--border-soft);
+  padding: 28px;
+  transition: 0.25s ease;
+}
+
+.event-card:hover {
+  background: white;
+  transform: translateY(-4px);
+}
+
+.event-date {
+  display: inline-block;
+  color: var(--accent);
+  font-family: Arial, sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 18px;
+}
+
+.contact-preview {
+  margin-bottom: 84px;
+  padding: 44px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border-soft);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.primary-btn {
+  background: var(--accent);
+  color: white;
+  padding: 13px 22px;
+  text-decoration: none;
+  border-radius: 999px;
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: none;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: var(--accent-2);
+}
+
+.contact-hero {
+  padding: 90px 0 52px;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 34px;
+  padding-bottom: 90px;
+}
+
+.contact-form,
+.contact-info {
+  background: rgba(255,255,255,0.38);
+  border: 1px solid var(--border-soft);
+  padding: 34px;
+  box-shadow: var(--shadow);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form label {
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 13px 14px;
+  border: 1px solid var(--border-soft);
+  background: rgba(255,255,255,0.7);
+}
+
+.info-box {
+  padding: 18px 0;
+  border-top: 1px solid var(--border-soft);
+}
+
+.footer {
+  text-align: center;
+  padding: 28px 6%;
+  border-top: 1px solid var(--border-soft);
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .featured-blocks,
+  .calendar-grid,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-preview {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+}
