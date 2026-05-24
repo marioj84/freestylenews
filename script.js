@@ -11,9 +11,27 @@ document.addEventListener('DOMContentLoaded', () => {
       const eventInfo = document.getElementById('eventInfo').value.trim();
       const publisherMessage = document.getElementById('publisherMessage').value.trim();
 
-      const message = `Hola, soy parte de ${organization}. Quiero publicar un evento en FreestyleNews.%0A%0ANombre del evento: ${eventName}%0ACorreo de contacto: ${contactEmail}%0A%0AInformación del evento:%0A${eventInfo}%0A%0AMensaje adicional:%0A${publisherMessage}`;
+      const rawMessage = `Hola, equipo de FreestyleNews.
 
-      const whatsappUrl = `https://wa.me/56966032734?text=${message}`;
+Quisiera solicitar la publicación de un evento o noticia en la plataforma.
+
+Datos de la solicitud:
+
+Nombre del evento o noticia: ${eventName}
+Organización / comunidad: ${organization}
+Correo de contacto: ${contactEmail}
+
+Información para publicar:
+${eventInfo}
+
+Mensaje adicional:
+${publisherMessage || 'Sin mensaje adicional.'}
+
+Quedo atento/a para coordinar la publicación.
+Muchas gracias.`;
+
+      const encodedMessage = encodeURIComponent(rawMessage);
+      const whatsappUrl = `https://wa.me/56966032734?text=${encodedMessage}`;
 
       window.open(whatsappUrl, '_blank');
     });
