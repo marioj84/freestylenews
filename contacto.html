@@ -3,68 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto | FreestyleNews</title>
+  <title>Publicar evento | FreestyleNews</title>
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-  <header class="header">
-    <a href="index.html" class="logo">Freestyle<span>News</span></a>
-    <nav class="nav">
+  <header class="site-header">
+    <a href="index.html" class="brand">Freestyle<span>News</span></a>
+
+    <nav class="main-nav">
       <a href="index.html">Inicio</a>
-      <a href="contacto.html" class="active">Contactanos</a>
+      <a href="contacto.html" class="active">Publicar</a>
     </nav>
-    <a class="whatsapp-btn" href="https://wa.me/56966032734?text=quiero%20mas%20info%20de%20freestyle" target="_blank" rel="noopener noreferrer">
-      <span class="whatsapp-mark">WA</span>
-      Contactame
-    </a>
+
+    <a class="whatsapp-btn" href="https://wa.me/56966032734?text=quiero%20mas%20info%20de%20freestyle" target="_blank" rel="noopener noreferrer">Contactame</a>
   </header>
 
   <main>
     <section class="contact-hero">
-      <p class="section-label">Contacto</p>
-      <h1>Hablemos de freestyle</h1>
-      <p>Completa este formulario demo para recibir información sobre eventos, competencias y novedades de la escena.</p>
+      <p class="kicker">Publicar</p>
+      <h1>Publica tu evento o noticia</h1>
+      <p>Envía la información y se abrirá automáticamente WhatsApp con el mensaje listo para compartir.</p>
     </section>
 
     <section class="contact-layout">
-      <form class="contact-form">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" placeholder="Tu nombre" />
+      <form class="contact-form" id="publishForm">
+        <label for="eventName">Nombre del evento</label>
+        <input type="text" id="eventName" placeholder="Ej: Batalla Parque Bustamante" required />
 
-        <label for="correo">Correo</label>
-        <input type="email" id="correo" placeholder="tu@email.com" />
+        <label for="organization">Organización</label>
+        <input type="text" id="organization" placeholder="Ej: Freestyle Santiago" required />
 
-        <label for="interes">¿Qué información buscas?</label>
-        <select id="interes">
-          <option>Próximos eventos</option>
-          <option>Noticias de freestyle</option>
-          <option>Rankings y competidores</option>
-          <option>Organizar una batalla</option>
-        </select>
+        <label for="contactEmail">Correo electrónico de contacto</label>
+        <input type="email" id="contactEmail" placeholder="contacto@email.com" required />
 
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" rows="5" placeholder="Cuéntanos qué estás buscando..."></textarea>
+        <label for="eventInfo">Información del evento</label>
+        <textarea id="eventInfo" rows="6" placeholder="Fecha, lugar, horario, premios, formato, participantes, redes sociales..." required></textarea>
 
-        <button type="submit" class="primary-btn">Enviar mensaje</button>
+        <label for="publisherMessage">Mensaje adicional</label>
+        <textarea id="publisherMessage" rows="4" placeholder="Información adicional o comentarios."></textarea>
+
+        <button type="submit" class="primary-btn">Enviar por WhatsApp</button>
       </form>
 
       <aside class="contact-info">
-        <h2>Información rápida</h2>
-        <p>Esta página es una demo enfocada en la cultura freestyle internacional.</p>
+        <h2>¿Qué puedes publicar?</h2>
 
         <div class="info-box">
-          <strong>WhatsApp</strong>
-          <p>Consulta directa sobre próximos eventos.</p>
+          <strong>Eventos</strong>
+          <p>Batallas, cyphers, plazas, torneos y competencias regionales.</p>
         </div>
 
         <div class="info-box">
-          <strong>Contenido</strong>
-          <p>Noticias, rankings y calendario demo.</p>
+          <strong>Noticias</strong>
+          <p>Novedades de la escena, anuncios y resultados.</p>
         </div>
 
         <div class="info-box">
-          <strong>Escena</strong>
-          <p>Red Bull Batalla, FMS y Supremacia MC.</p>
+          <strong>Comunidad</strong>
+          <p>FreestyleNews busca visibilizar tanto la escena profesional como la calle.</p>
         </div>
       </aside>
     </section>
