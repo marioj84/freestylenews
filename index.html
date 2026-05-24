@@ -92,36 +92,7 @@
         <p>Un resumen visual de lo más relevante: novedades de ligas, anuncios oficiales, finales nacionales, clasificatorias y movimientos de la escena.</p>
       </div>
 
-      <div class="magazine-grid">
-        <article class="main-story story-card">
-          <div class="story-image image-crowd"></div>
-          <div class="story-content">
-            <span>Urban Roosters</span>
-            <h3>Actualidad del circuito profesional</h3>
-            <p>Noticias, jornadas, anuncios, competidores y movimientos del ecosistema FMS.</p>
-            <a href="https://urbanroosters.com" target="_blank" rel="noopener noreferrer">Ir a Urban Roosters</a>
-          </div>
-        </article>
-
-        <article class="story-card side-story">
-          <div class="story-content">
-            <span>Red Bull Batalla</span>
-            <h3>Finales nacionales e internacional</h3>
-            <p>Cobertura de una de las competencias más visibles del freestyle hispano.</p>
-            <a href="https://www.redbull.com/cl-es/event-series/red-bull-batalla" target="_blank" rel="noopener noreferrer">Ver Red Bull Batalla</a>
-          </div>
-          <div class="story-image image-stage"></div>
-        </article>
-
-        <article class="story-card side-story reverse">
-          <div class="story-image image-mic"></div>
-          <div class="story-content">
-            <span>FreestyleNews</span>
-            <h3>Resumen semanal</h3>
-            <p>Una lectura rápida de qué pasó, qué viene y qué batallas conviene seguir.</p>
-          </div>
-        </article>
-      </div>
+      <div class="magazine-grid" id="newsContainer"></div>
     </section>
 
     <section class="wide-banner">
@@ -139,11 +110,7 @@
           <a href="https://fms.tv/resultados/" target="_blank" rel="noopener noreferrer">Ver FMS TV</a>
         </div>
         <h2>Últimas batallas</h2>
-        <div class="result-list">
-          <div><strong>FMS</strong><span>Resultados oficiales</span><strong>Ver fuente</strong></div>
-          <div><strong>Red Bull</strong><span>Finales y clasificatorias</span><strong>Agenda</strong></div>
-          <div><strong>Local</strong><span>Reportes comunitarios</span><strong>Enviar</strong></div>
-        </div>
+        <div class="result-list" id="resultsContainer"></div>
       </div>
 
       <div class="dashboard-card" id="estadisticas">
@@ -152,11 +119,7 @@
           <a href="https://freestylestats.com/competition/fms-world-series/2025-2026/standings" target="_blank" rel="noopener noreferrer">Ver FreestyleStats</a>
         </div>
         <h2>Rankings y rendimiento</h2>
-        <div class="rank-list">
-          <div><span>#</span><strong>Standings FMS World Series</strong><small>Posiciones, puntos y rendimiento competitivo.</small></div>
-          <div><span>%</span><strong>Lectura de desempeño</strong><small>Victorias, derrotas, réplica y evolución por jornada.</small></div>
-          <div><span>↗</span><strong>Tendencias</strong><small>Competidores en ascenso y cruces relevantes.</small></div>
-        </div>
+        <div class="rank-list" id="statsContainer"></div>
       </div>
     </section>
 
@@ -171,22 +134,12 @@
 
       <div class="agenda-block agenda-world">
         <h3>Agenda mundial</h3>
-        <div class="agenda-grid">
-          <article><span>Mundial</span><h3>FMS World Series</h3><p>Calendario, jornadas y eventos internacionales.</p></article>
-          <article><span>Internacional</span><h3>Red Bull Batalla</h3><p>Finales nacionales, clasificatorias y final internacional.</p></article>
-          <article><span>Global</span><h3>Urban Roosters</h3><p>Noticias, eventos y anuncios del circuito profesional.</p></article>
-          <article class="submit-event"><span>Comunidad</span><h3>Publica tu batalla</h3><p>Envía la información y suma tu evento al radar.</p></article>
-        </div>
+        <div class="agenda-grid" id="worldAgendaContainer"></div>
       </div>
 
       <div class="agenda-block agenda-chile">
         <h3>Agenda regional · Santiago</h3>
-        <div class="agenda-grid">
-          <article><span>18 JUL 2026</span><h3>Movistar Arena</h3><p>Showcase freestyle · Evento ficticio de prueba.</p></article>
-          <article><span>26 JUL 2026</span><h3>Teatro Caupolicán</h3><p>Batalla invitacional · Evento ficticio de prueba.</p></article>
-          <article><span>09 AGO 2026</span><h3>Parque O'Higgins</h3><p>Cypher abierto · Evento ficticio de prueba.</p></article>
-          <article><span>23 AGO 2026</span><h3>Parque Bustamante</h3><p>Freestyle de calle · Evento ficticio de prueba.</p></article>
-        </div>
+        <div class="agenda-grid" id="regionalAgendaContainer"></div>
       </div>
     </section>
 
@@ -204,6 +157,7 @@
     <p>© 2026 FreestyleNews · Administrado por Saul Alvarez.</p>
   </footer>
 
+  <script src="data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
